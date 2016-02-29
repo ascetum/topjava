@@ -6,19 +6,12 @@ import java.time.LocalDateTime;
  * GKislin
  * 11.01.2015.
  */
-public class UserMealWithExceed {
-    protected final LocalDateTime dateTime;
-
-    protected final String description;
-
-    protected final int calories;
-
+public class UserMealWithExceed  extends UserMeal{
     protected final boolean exceed;
 
     public UserMealWithExceed(LocalDateTime dateTime, String description, int calories, boolean exceed) {
-        this.dateTime = dateTime;
-        this.description = description;
-        this.calories = calories;
+        super(dateTime, description, calories);
         this.exceed = exceed;
     }
+
 }
